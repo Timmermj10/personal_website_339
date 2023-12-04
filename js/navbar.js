@@ -25,6 +25,7 @@ var dropdown = document.querySelector(".dropdown");
 if (!checkCookie("darkmode")) {
     console.log("Set cookie");
     document.cookie = "darkmode=true";
+    check.checked = true;
 }
 // If the cookie is set
 else {
