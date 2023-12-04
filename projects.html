@@ -20,6 +20,10 @@
                     <a href="index.html">About</a>
                 </h1>
 
+                <!-- Darkmode toggle from YouTube "Red Stapler" -->
+                <input type="checkbox" id="darkmode-toggle" />
+                <label for="darkmode-toggle" aria-label="darkmode-slider"></label>
+
                 <!-- Credit to abbysyp for this way of making the openable nav page -->
                 <div class="nav_open">
                     <div class="bar1"></div>
@@ -46,8 +50,69 @@
 
     <div id="main">
         <h1 class="my_name">
-            Fun
+            Projects
         </h1>
+
+        <div class="project">
+            <div class="project_stubs">
+                <h2 class="project_name">Personal Website</h2>
+
+                <h3 class="project_lang">Languages:</h3>
+                
+                <h3 class="project_lang_list">HTML/CSS/JS</h3>
+
+                <h3 class="project_about">Project Summary:</h3>
+
+                <h4 class="project_date">12 / 4 / 2023</h4>
+
+                <h4 class="project_status">In progress</h4>
+
+                <h4 class="project_link">
+                    <a href="https://github.com/Timmermj10/personal_website_339" target="_blank">Code</a>
+                </h4>
+
+                <h4 class="project_type">Class + Personal</h4>
+            </div>
+            <div class="project_text">
+                <p>
+                    For this project I was tasked to make any website I wanted. Having always wanted to create a portfolio + fun
+                    website I took the opportunity to make a<a href="https://timmermj10.github.io/personal_website_339/" target="_blank">Personal
+                    Website</a>. I will use the website to list out completed, both personal and class, as well as future and in progress projects. I also plan to include sections about what I do outside of the classroom for fun including sections about video games, skateboards, and "food tech". I've also always enjoyed websites that have light/dark mode sliders to change the color theme of the website, so I took the time to find a YouTube tutorial for the CSS/looks of the slider, as well as implementing the change of color using JS. The last piece was adding cookies to make sure that the color theme that you have set on one page will transfer over to the other pages on the site, as well as making it so when you return, your preferred color theme will still be in use!
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project_stubs">
+                <h2 class="project_name">Grace Hash Join</h2>
+        
+                <h3 class="project_lang">Languages:</h3>
+        
+                <h3 class="project_lang_list">C++</h3>
+        
+                <h3 class="project_about">Project Summary:</h3>
+        
+                <h4 class="project_date">12 / 1 / 2023</h4>
+        
+                <h4 class="project_status">Complete</h4>
+        
+                <h4 class="project_link">
+                    Code Restricted
+                </h4>
+        
+                <h4 class="project_type">Class Project</h4>
+            </div>
+            <div class="project_text">
+                <p>
+                    This project was the fourth and final project in the sequence for EECS 484: Database Management Systems. For this project we had to implement the partition and probing steps for the popular database management algorithm: Grace Hash Join. The implementation mainly relied on the use of given helper functions as well as a given Bucket method. The basic idea for the partition phase is:
+                    <li>Loop through all left pages</li>
+                    <li>Loop through all left records</li>
+                    <li>Hash the key of the record and place the record in an in memory hash table</li>
+                    <li>Flush the B-1 hash table pages to disk for use in the Probing phase</li>
+                    <li>Repeat for the right input</li>
+                </p>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">

@@ -1,15 +1,17 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
-        color: white;
+    /* color: white; */
 }
 
 body {
     background-color: #313131;
+    color: white;
 }
 
 #main {
-    border: solid 1px #414141;
+    border: #414141;
     margin: 3%;
+    padding: 1%;
     border-radius: 5%;
     background-color: #414141;
 }
@@ -109,7 +111,7 @@ body {
     min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
-    border: solid 1px #525252;
+    border: #525252;
     border-radius: 5% 5% 5% 5%;
 }
 
@@ -132,6 +134,8 @@ label {
     box-shadow: inset 0px 5px 15px rgba(0,0,0,0,4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
     cursor: pointer;
     transition: 0.3s;
+    margin-left: auto;
+    margin-right: 1%;
 }
 
 label:after {
@@ -153,7 +157,7 @@ input {
     visibility: hidden;
 }
 
-/* input:checked + label {
+input:checked + label {
     background: #242424;
 }
 
@@ -161,7 +165,7 @@ input:checked +label:after {
     left: 49px;
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a);
-} */
+}
 
 
 /* Navbar */
@@ -171,6 +175,7 @@ input:checked +label:after {
     font-size: larger;
     text-align: center;
     padding: 20px;
+    /* color: white; */
 }
 
 /* Picture of me */
@@ -194,7 +199,7 @@ h2 {
     text-align: center;
     margin: 3%;
     padding: 1%;
-    border: solid 1px #525252;
+    border: #525252;
     border-radius: 5%;
     background-color: #525252;
 }
@@ -243,4 +248,100 @@ h2 {
         animation: none;
         opacity: 1;
     }
+}
+
+
+/* Project Page */
+
+.project {
+    background-color: #525252;   
+    margin: 3%;
+    padding: 1%;
+    border: #525252;
+    border-radius: 5%;
+    align-items: center;
+}
+
+.project_stubs {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 4;
+}
+
+.project * {
+    padding: 1%;
+}
+
+.project_stubs * {
+    padding: 2%;
+}
+
+.project_name {
+    grid-column: 1;
+    text-align: left;
+    font-size: larger;
+}
+
+.project_lang {
+    grid-column: 1;
+}
+
+.project_lang_list {
+    grid-column: 1;
+    grid-row: 3;
+    padding-left: 20px;
+}
+
+.project_about {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.project_date {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+}
+
+.project_status {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+}
+
+.project_link {
+    grid-column: 2;
+    grid-row: 3;
+    text-decoration: underline;
+    text-align: right;
+}
+
+.project_type {
+    grid-column: 2;
+    grid-row: 4;
+    text-align: right;
+}
+
+.project_text a {
+    text-decoration: underline;
+}
+
+/* Fun page */
+
+.fun {
+    background-color: #525252;
+    margin: 3%;
+    padding: 1%;
+    border: #525252;
+    border-radius: 5%;
+    align-items: center;
+}
+
+.fun * {
+    padding: 1%;
+}
+
+.fun_explore {
+    text-decoration: underline;
+    text-align: center;
 }
