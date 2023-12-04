@@ -47,7 +47,7 @@ else {
         dropdown.style.backgroundColor = "#525252";
 
         // Specific pieces for each page
-        if (currentPageName == "index.html") {
+        if (currentPageName == "index.html" || currentPageName == "") {
             about.style.backgroundColor = "#525252";
         }
 
@@ -81,7 +81,7 @@ else {
         dropdown.style.backgroundColor = "#CFD8DC";
 
         // Specific pieces for each page
-        if (currentPageName == "index.html") {
+        if (currentPageName == "index.html" || currentPageName == "") {
             about.style.backgroundColor = "#CFD8DC";
         }
 
@@ -136,9 +136,11 @@ document.querySelector("#darkmode-toggle").addEventListener("click", function() 
         footer.style.color = "#313131";
         page_name.style.color = "#313131";
         dropdown.style.backgroundColor = "#CFD8DC";
+        console.log(currentPageName);
 
         // Specific pieces for each page
-        if (currentPageName == "index.html") {
+        if (currentPageName == "index.html" || currentPageName == "") {
+            // console.log(currentPageName);
             about.style.backgroundColor = "#CFD8DC";
         }
 
@@ -171,9 +173,10 @@ document.querySelector("#darkmode-toggle").addEventListener("click", function() 
         footer.style.color = "white";
         page_name.style.color = "white";
         dropdown.style.backgroundColor = "#525252";
+        console.log(currentPageName);
 
         // Specific pieces for each page
-        if (currentPageName == "index.html") {
+        if (currentPageName == "index.html" || currentPageName == "") {
             about.style.backgroundColor = "#525252";
         }
 
