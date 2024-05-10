@@ -314,6 +314,7 @@ h2 {
     grid-row: 3;
     text-decoration: underline;
     text-align: right;
+    padding: 0;
 }
 
 .project_type {
